@@ -93,7 +93,7 @@
                         <instruction factoryType="GraphicalInstructionMap" name="InhouseToXMLClaim" nameDisplayed="true" mapName="~/Maps/InhouseToXMLClaim.mdm" hash="b024d47f-432f-4078-a25b-b7b556f42405">
                            <bounds height="40" width="90" y="20"/>
                         </instruction>
-                        <instruction factoryType="GraphicalInstructionMap" name="DatabaseLogging" nameDisplayed="true" mapName="~/Maps/DatabaseLogging.mdm" hash="d4ac9bb7-b15d-4ec5-9986-04ffaeaf7176">
+                        <instruction factoryType="GraphicalInstructionMap" name="DatabaseLogging" nameDisplayed="true" mapName="~/Maps/DatabaseLoggingClaim.mdm" hash="d4ac9bb7-b15d-4ec5-9986-04ffaeaf7176">
                            <bounds height="40" width="90" y="80"/>
                         </instruction>
                      </intructions>
@@ -124,14 +124,14 @@ loop on in:\Claim{
             <channelLink ref="1b706b6f-c4f4-4450-a427-3a58027e702b"/>
          </channelLinks>
          <intructions>
-            <instruction factoryType="GraphicalInstructionDatabaseMap" name="DatabaseCheck" nameDisplayed="true" mapName="~/Maps/DatabaseCheck.mdm" hash="471d0b74-a944-4d1a-8f91-352b757dede5">
+            <instruction factoryType="GraphicalInstructionDatabaseMap" name="DatabaseCheck" nameDisplayed="true" mapName="~/Maps/DatabaseClaim.mdm" hash="471d0b74-a944-4d1a-8f91-352b757dede5">
                <bounds height="40" width="90" y="20"/>
             </instruction>
          </intructions>
       </graphNode>
       <graphNode factoryType="GraphicalBusinessDocumentEntity" name="DatabaseCheck_INSERT" hash="5c82b185-5569-4182-9958-0a26bf1f2add">
          <bounds x="439" height="40" width="90" y="191"/>
-         <documentName>~/Business Documents/DatabaseCheck_INSERT.bdoc</documentName>
+         <documentName>~/Business Documents/DatabaseInsert_Claim.bdoc</documentName>
       </graphNode>
    </graphNodes>
 </flow>

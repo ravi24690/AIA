@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map xmlns="http://www.axway.com/mappingServices/map" id="1767e316-8534-49ac-8717-379e4518d708">
-   <signature appVersion="3.1.2" lastUpdatedOn="12/09/2018 16:46:56 +0530"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="14/09/2018 17:13:49 +0530"/>
    <outputBusinessDocument businessDocument="~/Business Documents/DiagnosisXML.bdoc" alias="out"/>
    <inputBusinessDocuments>
-      <inputBusinessDocument businessDocument="~/Business Documents/Diagnosis.bdoc" alias="in"/>
+      <inputBusinessDocument businessDocument="~/Business Documents/Diagnosis.bdoc" alias="in2"/>
    </inputBusinessDocuments>
    <mapElements>
       <mapElement elementHash="-590263718" elementPath="/Diagnosis/ProviderName/ProviderName/">
-         <dmlExpression><![CDATA[trimString ( in:\ProviderName\Name, "Provider Name: ")]]></dmlExpression>
+         <dmlExpression><![CDATA[trimString (in2:\ProviderName\Name, "Provider Name: ")]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="566540248" elementPath="/Diagnosis/Parent14/">
-         <dmlExpression><![CDATA[For each in:\Diagnosis]]></dmlExpression>
+      <mapElement elementHash="566540248" elementPath="/Diagnosis/DiagnosisDetails/">
+         <dmlExpression><![CDATA[For each in2:\Diagnosis [ where (not isNullOrAbsent ( item\InvoiceNumber ))  and ( not isNullOrAbsent (item\InvoiceDate) ) and ( not isNullOrAbsent (item\DiagnosisCode) ) and ( not isNullOrAbsent ( item\DiagnosisDescription) ) and ( not isNullOrAbsent ( item\SpecialistName1 )  )  ]]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="421766517" elementPath="/Diagnosis/DiagnosisDetails/InvoiceNumber/">
          <dmlExpression><![CDATA[this\InvoiceNumber]]></dmlExpression>
@@ -31,7 +31,7 @@
          <dmlExpression><![CDATA[this\DiagnosisDescription]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1310597616" elementPath="/Diagnosis/ProviderCode/ProviderCode/">
-         <dmlExpression><![CDATA[trimString ( in:\ProviderCode\Code , "Provider Code: ")]]></dmlExpression>
+         <dmlExpression><![CDATA[trimString (in2:\ProviderCode\Code , "Provider Code: ")]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1090643025" elementPath="/Diagnosis/Parent14/InvoiceDate/">
          <dmlExpression><![CDATA[this\InvoiceDate]]></dmlExpression>

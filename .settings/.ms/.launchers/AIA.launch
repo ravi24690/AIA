@@ -24,14 +24,14 @@
 </mapAttribute>
 <stringAttribute key="com.axway.ms.dml.simulation.ui.errorMapWorkspacePath" value=""/>
 <booleanAttribute key="com.axway.ms.dml.simulation.ui.handleErrorMap" value="false"/>
-<stringAttribute key="com.axway.ms.dml.simulation.ui.objectWorkspacePath" value="/AIA/Mapping Flows/InhouseToXMLClaim.dmlflw"/>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.objectWorkspacePath" value="/AIA/Mapping Flows/InhouseToXMLDetails.dmlflw"/>
 <stringAttribute key="com.axway.ms.dml.simulation.ui.simulationTimeout" value="240000"/>
 <booleanAttribute key="com.axway.ms.dml.simulation.ui.useDefaultErrorMapWorkspacePath" value="true"/>
 <booleanAttribute key="continueMessageProcessingOnError" value="false"/>
 <booleanAttribute key="groupAllResultingInstances" value="false"/>
 <booleanAttribute key="keepExactValue" value="true"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/AIA/Mapping Flows/InhouseToXMLClaim.dmlflw"/>
+<listEntry value="/AIA/Mapping Flows/InhouseToXMLDetails.dmlflw"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
