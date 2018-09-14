@@ -1,0 +1,10 @@
+Provider Code: 62158012
+Provider Name: COLUMBIA ASIA HOSPITAL PUCHONG
+Date Send: 03/08/2018
+Visit Type: OP
+
+Invoice Number|Invoice Date|Transaction Type|Debit/Credit Note No.|Patient Name|Patient IC|Admission Date|Admission Time|Discharged Date|Discharged Time|LOG Number|Claim Type/Visit Type|Total Amount|Total Discounted|Total Tax Amount|Total Payable Amount|Rounded Off Value|Amount to be Paid|Patient Paid Amount
+OPC-101872|29/01/2018|Final Bill|ABC|AMIRUL HAZIQ BIN UMAR|931129-10-5045|29/01/2018|02:45:50PM|||K2040146|OP|313.32|||313.32|0.02|323.3|
+OPC-101873|30/01/2018|Final Bill|DEF|AMIRUL HAZIQ BIN UMAR|931129-10-5045|30/01/2018|02:45:50PM|||K2040147|OP|210|5||205||200|5
+
+No. of record: 9

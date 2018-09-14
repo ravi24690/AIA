@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="dddf5240-7f3c-4ae9-89e9-a59d12945d9c">
+   <signature appVersion="3.1.2" lastUpdatedOn="13/09/2018 16:06:54 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/DatabaseLogging_INSERT.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/Database.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-947969741" elementPath="/root/GL_NO/">
+         <dmlExpression><![CDATA[this\gl_no]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1316692764" elementPath="/root/CLAIM_FILENAME/">
+         <dmlExpression><![CDATA[this\claim_filename]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2047632136" elementPath="/root/">
+         <dmlExpression><![CDATA[for each in:\root]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="165550549" elementPath="/root/INVOICE_NUMBER/">
+         <dmlExpression><![CDATA[this\invoice_number]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-502560987" elementPath="/root/DIAGNOSIS/">
+         <dmlExpression><![CDATA[this\diagnosis]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="560070704" elementPath="/root/DATE_TIME_PROCESSED/">
+         <dmlExpression><![CDATA[this\date_time_processed]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-353021884" elementPath="/root/DETAILS/">
+         <dmlExpression><![CDATA[this\details]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-949492443" elementPath="/root/CLAIM/">
+         <dmlExpression><![CDATA[this\claim]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1726909256" elementPath="/root/OVERALL_STATUS/">
+         <dmlExpression><![CDATA[this\overall_status]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="127114736" elementPath="/root/IMAGE/">
+         <dmlExpression><![CDATA[this\image]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-3336385" elementPath="/root/INVOICE_DATE/">
+         <dmlExpression><![CDATA[this\invoice_date]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

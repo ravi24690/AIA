@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/flatFileBusinessDocument" keepInputNumberFractionDigits="true" encodingBD="iso8859" keepDecimalSeparator="true" id="3c811be1-c6a7-40f0-9006-793455e14ed4" keepDecimalSeparatorCharacter="true" keepInputNumberDateDigits="true">
+   <signature appVersion="3.1.2" lastUpdatedOn="13/09/2018 16:02:49 +0530"/>
+   <childElements>
+      <childElement factoryType="FlatFileParent" order="1" label="Root" name="root" parentDelimiterElement="3" hash="1091938012">
+         <cardinality minimum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="claim_filename" paddingPosElement="1" order="2" keepDecimalSeparator="true" encodingElement="iso8859" hash="1463859281" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="date_time_processed" paddingPosElement="1" order="3" keepDecimalSeparator="true" encodingElement="iso8859" hash="-657120926" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="invoice_number" paddingPosElement="1" order="4" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1547544469" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="invoice_date" paddingPosElement="1" order="5" keepDecimalSeparator="true" encodingElement="iso8859" hash="1954691468" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="gl_no" paddingPosElement="1" order="6" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1507980674" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="claim" paddingPosElement="1" order="7" keepDecimalSeparator="true" encodingElement="iso8859" hash="446106185" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="diagnosis" paddingPosElement="1" order="8" keepDecimalSeparator="true" encodingElement="iso8859" hash="1817786552" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="details" paddingPosElement="1" order="9" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1182074644" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="image" paddingPosElement="1" order="10" keepDecimalSeparator="true" encodingElement="iso8859" hash="909657478" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="overall_status" paddingPosElement="1" order="11" keepDecimalSeparator="true" encodingElement="iso8859" hash="719834878" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+   </childElements>
+</businessDocument>

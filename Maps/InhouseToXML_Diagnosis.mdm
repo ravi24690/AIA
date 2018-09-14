@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="1767e316-8534-49ac-8717-379e4518d708">
+   <signature appVersion="3.1.2" lastUpdatedOn="12/09/2018 16:46:56 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/DiagnosisXML.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/Diagnosis.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-590263718" elementPath="/Diagnosis/ProviderName/ProviderName/">
+         <dmlExpression><![CDATA[trimString ( in:\ProviderName\Name, "Provider Name: ")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="566540248" elementPath="/Diagnosis/Parent14/">
+         <dmlExpression><![CDATA[For each in:\Diagnosis]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="421766517" elementPath="/Diagnosis/DiagnosisDetails/InvoiceNumber/">
+         <dmlExpression><![CDATA[this\InvoiceNumber]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1170696442" elementPath="/Diagnosis/Parent14/DiagnosisCode/">
+         <dmlExpression><![CDATA[this\DiagnosisCode]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-170199245" elementPath="/Prolog/XmlEncoding/">
+         <dmlExpression><![CDATA["ISO-8859-1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1945532739" elementPath="/Diagnosis/Parent14/SpecialistName1/">
+         <dmlExpression><![CDATA[this\SpecialistName1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2139750404" elementPath="/Prolog/XmlVersion/">
+         <dmlExpression><![CDATA["1.0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-157532181" elementPath="/Diagnosis/Parent14/DiagnosisDescription/">
+         <dmlExpression><![CDATA[this\DiagnosisDescription]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1310597616" elementPath="/Diagnosis/ProviderCode/ProviderCode/">
+         <dmlExpression><![CDATA[trimString ( in:\ProviderCode\Code , "Provider Code: ")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1090643025" elementPath="/Diagnosis/Parent14/InvoiceDate/">
+         <dmlExpression><![CDATA[this\InvoiceDate]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

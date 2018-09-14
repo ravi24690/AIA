@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="b166e8aa-b748-49f0-a0fb-4f1660850fc3">
+   <signature appVersion="3.1.2" lastUpdatedOn="12/09/2018 18:28:59 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/DetailsXML.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/Details.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="1669567729" elementPath="/Details/ProviderNumber/ProviderNumber/">
+         <dmlExpression><![CDATA[trimString ( in:\ProviderName\Name, "Provider Name: ")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-577987139" elementPath="/Details/Details/BillingItemGroupingCode/">
+         <dmlExpression><![CDATA[BillingItemGroupingID]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="260368662" elementPath="/Details/Details/BillingItemCode/">
+         <dmlExpression><![CDATA[BillingItemCode]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="810315468" elementPath="/Details/Details/InvoiceDate/">
+         <dmlExpression><![CDATA[InvoiceDate]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-982565092" elementPath="/Prolog/XmlEncoding/">
+         <dmlExpression><![CDATA["ISO-8859-1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1246430406" elementPath="/Details/Details/PayableAmount/">
+         <dmlExpression><![CDATA[PayableAmount]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1477497996" elementPath="/Details/Details/InvoiceNumber/">
+         <dmlExpression><![CDATA[InvoiceNumber]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-767277922" elementPath="/Details/Details/Quantity/">
+         <dmlExpression><![CDATA[Quantity]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1568638068" elementPath="/Prolog/XmlVersion/">
+         <dmlExpression><![CDATA["1.0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1655314436" elementPath="/Details/ProviderCode/ProviderCode/">
+         <dmlExpression><![CDATA[trimString ( in:\ProviderCode\Code , "Provider Code: ")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1289271969" elementPath="/Details/Details/Amount/">
+         <dmlExpression><![CDATA[UnitPrice]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-377699164" elementPath="/Details/Details/BillingItemDescription/">
+         <dmlExpression><![CDATA[BillingItemDescription]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-481805327" elementPath="/Details/Details/TransactionDate/">
+         <dmlExpression><![CDATA[TransactionDate]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="319070829" elementPath="/Details/Details/">
+         <dmlExpression><![CDATA[For each in:\Details]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

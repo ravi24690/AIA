@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flow xmlns="http://www.axway.com/mappingServices/flow" id="be57b815-f505-4f95-8b92-794fa75c5587">
+   <signature appVersion="3.1.2" lastUpdatedOn="14/09/2018 14:49:42 +0530"/>
+   <channelLinks>
+      <channelLink name="Link1" hash="e4032b88-7983-4b07-914d-c4d2b399bc4a" virtual="true">
+         <target ref="1e783f22-a29e-4d69-806b-0033dcac8479"/>
+      </channelLink>
+      <channelLink name="Link1" hash="efe91ca7-5bee-4936-828d-bce2d0f11e0f" virtual="true">
+         <target ref="1e783f22-a29e-4d69-806b-0033dcac8479"/>
+      </channelLink>
+      <channelLink name="Link1" hash="1b706b6f-c4f4-4450-a427-3a58027e702b" virtual="true">
+         <source ref="892d4a1d-3c58-4446-bbb7-4ef11b4756b8"/>
+         <target ref="1e783f22-a29e-4d69-806b-0033dcac8479"/>
+      </channelLink>
+   </channelLinks>
+   <channels>
+      <channel name="Channel" hash="1e783f22-a29e-4d69-806b-0033dcac8479">
+         <ChannelType>
+            <![CDATA[DATABASE]]>
+         </ChannelType>
+      </channel>
+   </channels>
+   <configurationParameters>
+      <configurationParameter name="checkInputFacet" value="false"/>
+      <configurationParameter name="stopOnFirstInputFacetCheckError" value="false"/>
+      <configurationParameter name="checkInputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstInputCheckConstraintsError" value="false"/>
+      <configurationParameter name="checkOutputFacet" value="false"/>
+      <configurationParameter name="stopOnFirstOutputFacetCheckError" value="false"/>
+      <configurationParameter name="checkOutputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstOutputCheckConstraintsError" value="false"/>
+      <configurationParameter name="continueMessageProcessingOnError" value="false"/>
+      <configurationParameter name="groupAllResultingInstances" value="false"/>
+      <configurationParameter name="keepExactValue" value="false"/>
+      <configurationParameter name="copyAllAttributes" value="false"/>
+   </configurationParameters>
+   <graphLinks>
+      <graphLink name="link1" hash="ca63f795-9e3c-4e4a-bd35-faea5d0d81cd">
+         <source ref="13fbae26-33d1-4314-9fe1-814e1d781d0b"/>
+         <target ref="66b17404-2016-40ee-8eca-d5e7de57f66e"/>
+      </graphLink>
+      <graphLink name="Link1" hash="78e1c1c8-a1aa-43bf-bb89-6d335824e835">
+         <source ref="97c414e2-cb09-4473-ba91-613651de431b"/>
+         <target ref="446241db-6c6d-4eba-9b93-6e8d69269a68"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink2" type="TYPE_INPUT" connectedObjectAlias="in" hash="69b74dd3-b50a-4137-8084-16b28597f04b">
+         <source ref="66b17404-2016-40ee-8eca-d5e7de57f66e"/>
+         <target ref="1ae1c253-397e-46bd-84dc-20a6356132a9"/>
+      </graphLink>
+      <graphLink name="Link3" hash="3d3d8f3e-44a6-4ed9-8a25-c42a98df584b">
+         <source ref="97dee3af-2639-456f-9f38-25a35100db1b"/>
+         <target ref="23649caf-edf4-4626-9386-50f05d02e64d"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink1" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="fcb4e6cf-c4e5-4f37-a846-ef84e23360a2">
+         <source ref="b024d47f-432f-4078-a25b-b7b556f42405"/>
+         <target ref="97dee3af-2639-456f-9f38-25a35100db1b"/>
+      </graphLink>
+      <graphLink name="Link2" hash="df97a883-b521-403b-93b1-c37d64ee7cfd">
+         <source ref="b024d47f-432f-4078-a25b-b7b556f42405"/>
+         <target ref="d4ac9bb7-b15d-4ec5-9986-04ffaeaf7176"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink3" type="TYPE_OUTPUT" connectedObjectAlias="out1" hash="b6215291-c0e8-43c2-88e7-f06a5843f472">
+         <source ref="d4ac9bb7-b15d-4ec5-9986-04ffaeaf7176"/>
+         <target ref="5c82b185-5569-4182-9958-0a26bf1f2add"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink4" type="TYPE_INPUT" connectedObjectAlias="in" hash="aaa2bbbb-df68-4598-a58b-297732f7e708">
+         <source ref="5c82b185-5569-4182-9958-0a26bf1f2add"/>
+         <target ref="892d4a1d-3c58-4446-bbb7-4ef11b4756b8"/>
+      </graphLink>
+   </graphLinks>
+   <graphNodes>
+      <graphNode factoryType="InputEntity" name="input1" hash="13fbae26-33d1-4314-9fe1-814e1d781d0b">
+         <bounds height="40" width="90" y="150"/>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="ClaimXML" hash="97dee3af-2639-456f-9f38-25a35100db1b">
+         <bounds x="439" height="40" width="90" y="131"/>
+         <documentName>~/Business Documents/ClaimXML.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="Claim" hash="66b17404-2016-40ee-8eca-d5e7de57f66e">
+         <bounds x="105" height="40" width="90" y="150"/>
+         <documentName>~/Business Documents/Claim.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_InhouseToXMLClaim21" nameDisplayed="true" hash="1ae1c253-397e-46bd-84dc-20a6356132a9">
+         <bounds x="210" height="340" width="214" y="3"/>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionIf" name="If" nameDisplayed="true" hash="446241db-6c6d-4eba-9b93-6e8d69269a68">
+               <dmlExpression><![CDATA[%flag = 0 or %flag = 1]]></dmlExpression>
+               <bounds x="3" height="220" width="183" y="80"/>
+               <intructions>
+                  <instruction factoryType="GraphicalInstructionBlockTrue" name="Then" nameDisplayed="true" hash="36fc540e-7c9d-46c4-8766-14e6b8717581">
+                     <bounds x="3" height="160" width="118" y="20"/>
+                     <intructions>
+                        <instruction factoryType="GraphicalInstructionMap" name="InhouseToXMLClaim" nameDisplayed="true" mapName="~/Maps/InhouseToXMLClaim.mdm" hash="b024d47f-432f-4078-a25b-b7b556f42405">
+                           <bounds height="40" width="90" y="20"/>
+                        </instruction>
+                        <instruction factoryType="GraphicalInstructionMap" name="DatabaseLogging" nameDisplayed="true" mapName="~/Maps/DatabaseLogging.mdm" hash="d4ac9bb7-b15d-4ec5-9986-04ffaeaf7176">
+                           <bounds height="40" width="90" y="80"/>
+                        </instruction>
+                     </intructions>
+                  </instruction>
+               </intructions>
+            </instruction>
+            <instruction factoryType="GraphicalInstructionSet" name="Set1" hash="97c414e2-cb09-4473-ba91-613651de431b">
+               <dmlExpression><![CDATA[%flag:=1;
+loop on in:\Claim{
+	if (isNullOrAbsent (this\InvoiceNumber ))  or ( isNullOrAbsent (this\InvoiceDate) ) or ( isNullOrAbsent (this\PatientName)) or ( isNullOrAbsent (this\PatientIC) ) or ( isNullOrAbsent (this\AdmissionDate) ) or ( isNullOrAbsent (this\AdmissionTime) )
+		or ( isNullOrAbsent (this\LOGNumber) ) or ( isNullOrAbsent (this\ClaimType_VisitType) ) or  ( isNullOrAbsent (this\TotalAmount) )  or ( isNullOrAbsent (this\TotalPayableAmount) )  or ( isNullOrAbsent (this\AmountToBePaid) )
+	then 
+	{
+		%flag := 0;
+		break
+	}
+}]]></dmlExpression>
+               <bounds x="51" height="40" width="80" y="20"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="OutputEntity" name="out1" hash="23649caf-edf4-4626-9386-50f05d02e64d">
+         <bounds x="688" height="40" width="90" y="131"/>
+      </graphNode>
+      <graphNode factoryType="GraphicalInstructionBlockDatabase" name="DatabaseCheck" nameDisplayed="true" hash="892d4a1d-3c58-4446-bbb7-4ef11b4756b8">
+         <bounds x="544" height="100" width="139" y="163"/>
+         <channelLinks>
+            <channelLink ref="1b706b6f-c4f4-4450-a427-3a58027e702b"/>
+         </channelLinks>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionDatabaseMap" name="DatabaseCheck" nameDisplayed="true" mapName="~/Maps/DatabaseCheck.mdm" hash="471d0b74-a944-4d1a-8f91-352b757dede5">
+               <bounds height="40" width="90" y="20"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="DatabaseCheck_INSERT" hash="5c82b185-5569-4182-9958-0a26bf1f2add">
+         <bounds x="439" height="40" width="90" y="191"/>
+         <documentName>~/Business Documents/DatabaseCheck_INSERT.bdoc</documentName>
+      </graphNode>
+   </graphNodes>
+</flow>

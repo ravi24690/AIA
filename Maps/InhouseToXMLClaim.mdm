@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="1aa06daf-b372-4cac-9473-ebeb909e8ce0">
+   <signature appVersion="3.1.2" lastUpdatedOn="14/09/2018 14:53:52 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/ClaimXML.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/Claim.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-2119167123" elementPath="/Prolog/XmlEncoding/">
+         <dmlExpression><![CDATA["ISO-8859-1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="800456938" elementPath="/Claim/ClaimDetails/PatientName/">
+         <dmlExpression><![CDATA[this\PatientName]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1161471459" elementPath="/Claim/ClaimDetails/">
+         <dmlExpression><![CDATA[for each in:\Claim [ where (not isNullOrAbsent ( item\InvoiceNumber ))  and ( not isNullOrAbsent (item\InvoiceDate) ) and ( not isNullOrAbsent (item\PatientName)) and ( not isNullOrAbsent (item\PatientIC) ) and ( not isNullOrAbsent (item\AdmissionDate) ) and ( not isNullOrAbsent (item\AdmissionTime) )
+		and ( not isNullOrAbsent (item\LOGNumber) ) and ( not isNullOrAbsent (item\ClaimType_VisitType) ) and  ( not isNullOrAbsent (item\TotalAmount) )  and ( not isNullOrAbsent (item\TotalPayableAmount) )  and ( not isNullOrAbsent (item\AmountToBePaid) )]]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1446389050" elementPath="/Claim/ProviderName/ProviderName/">
+         <dmlExpression><![CDATA[trimString ( in:\ProviderName\Name, "Provider Name: ")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1397805723" elementPath="/Claim/ClaimDetails/TransactionType/">
+         <dmlExpression><![CDATA[this\TransactionType]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-494393682" elementPath="/Claim/ClaimDetails/AdmissionDate/">
+         <dmlExpression><![CDATA[this\AdmissionDate]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2137782082" elementPath="/Claim/ClaimDetails/ClaimType/">
+         <dmlExpression><![CDATA[this\ClaimType_VisitType]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1501467648" elementPath="/Claim/ProviderCode/ProviderCode/">
+         <dmlExpression><![CDATA[trimString ( in:\ProviderCode\Code , "Provider Code: ")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1385460764" elementPath="/Claim/ClaimDetails/PatientIC/">
+         <dmlExpression><![CDATA[this\PatientIC]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="937024854" elementPath="/Claim/ClaimDetails/AmountToBePaid/">
+         <dmlExpression><![CDATA[this\AmountToBePaid]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-153856171" elementPath="/Prolog/XmlVersion/">
+         <dmlExpression><![CDATA["1.0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-6182353" elementPath="/Claim/ClaimDetails/InvoiceNumber/">
+         <dmlExpression><![CDATA[this\InvoiceNumber]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2013350287" elementPath="/Claim/ClaimDetails/LOGNumber/">
+         <dmlExpression><![CDATA[this\LOGNumber]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1667935627" elementPath="/Claim/ClaimDetails/TotalPayableAmount/">
+         <dmlExpression><![CDATA[this\TotalPayableAmount]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-272687802" elementPath="/Claim/ClaimDetails/InvoiceDate/">
+         <dmlExpression><![CDATA[this\InvoiceDate]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="580808267" elementPath="/Claim/ClaimDetails/TotalAmount/">
+         <dmlExpression><![CDATA[this\TotalAmount]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-305409458" elementPath="/Claim/ClaimDetails/AdmissionTime/">
+         <dmlExpression><![CDATA[this\AdmissionTime]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>
